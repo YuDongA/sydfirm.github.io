@@ -1,0 +1,123 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title></title> 
+<style type="text/css">
+body,html{overflow: hidden;}
+
+canvas{box-shadow:3px 4px 5px #000;background:rgb(0,0,0);position: absolute;left: 0;top: 0;}
+</style>
+
+</head>
+<body>
+<canvas id="cv1" width="1200" height="540"></canvas>
+ <script type="text/javascript" src='js/potato01.js'></script>
+   <script type="text/javascript">
+var     w = document.documentElement.clientWidth,
+    h = document.documentElement.clientHeight,
+    cv = document.getElementById('cv1');
+    cv.width = w;
+    cv.height =h;
+var c = CB("cv1"),
+    balls = [],
+    blockAdd = false,
+    stars = [],
+    speed = 1;
+var Ball = c.Circle.extend(function() {
+
+    this.vx = 0;
+    this.vy = 0;
+    this.spring = 0.01;
+    this.springLength = 200;
+    this.friction = 0.9;
+    this.options = {
+        fill: "",
+        width:'40px'
+    }
+
+    this.setDragable();
+
+    this.onmouseover = function() {
+        blockAdd = true;
+    }
+
+    this.onmouseout = function() {
+        blockAdd = false;
+        speed = 1;
+    }
+
+    this.ondrag = function() {
+        speed = 5;
+        addStars(100);
+    }
+});
+function b(n, m){
+	return parseInt(Math.random() * (m - n)) + n;
+};
+function addBall(num) {
+    for (var i = 0; i < num; i++) {
+        var ct = Ball(Math.round(Math.random() * c.canvas.width), Math.round(Math.random() * c.canvas.height), b(5,30));
+        balls.push(ct);
+    };
+    
+}
+
+function addStars(num) {
+
+    for (var i = 0; i < num; i++) {
+        if (stars[i] == undefined) stars[i] = [Math.round(Math.random() * c.canvas.width), Math.round(Math.random() * c.canvas.height), Math.round(Math.random())];
+        stars[i][0] += speed / 2;
+
+        if (stars[i][0] > c.canvas.width) stars[i][0] -= c.canvas.width;
+        c.context.beginPath();
+        c.context.arc(stars[i][0], stars[i][1], stars[i][2], 0, Math.PI * 2, false);
+        c.context.closePath();
+        c.context.fill();
+    }
+}
+
+addBall(2);
+
+c.context.globalAlpha = 1;
+c.context.strokeStyle = "#ccc";
+c.context.fillStyle = "#fff";
+
+
+c.draw = function() {
+
+    addStars(100);
+
+    for (var i = 0; i < balls.length; i++) {
+
+        balls[i].draw();
+
+        var others = balls.slice(0, i).concat(balls.slice(i + 1));
+
+        for (var j = i; j < others.length; j++) {
+            c.context.moveTo(balls[i].x, balls[i].y);
+            c.context.lineTo(others[j].x, others[j].y);
+        }
+
+        c.context.stroke();
+    }
+}
+c.update = function() {
+    for (var i = 0; i < balls.length; i++) {
+
+        var others = balls.slice(0, i).concat(balls.slice(i + 1));
+
+        if (!balls[i].dragging) {
+            for (var j = 0; j < others.length; j++) {
+                balls[i].move(others[j].x, others[j].y, "elastic");
+            }
+        }
+    }
+}
+c.animate();
+c.addEvent(c.canvas, "click", function() {
+    if (!blockAdd && balls.length < 59) addBall(1);
+})
+ </script>
+</body>
+</html>
