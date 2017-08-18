@@ -1251,6 +1251,16 @@ iframe {
 	i.fa.fa-hourglass-end {
 		margin-top: 1.6em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1680px){
 	.education-agile-wThl-year {
@@ -1259,6 +1269,16 @@ iframe {
 	i.fa.fa-hourglass-end {
 		margin-top: 2em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1440px){
 	.education-agile-wThl-year {
@@ -1270,6 +1290,16 @@ iframe {
 	.banner,.agileinfo-dot {
 		min-height: 700px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1366px){
 	nav.navbar.navbar-default.navbar-fixed-top {
@@ -1292,6 +1322,16 @@ iframe {
 	.skills, .contact, .education, .about, .portfolio {
 		padding: 4em 0;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 
 }
 @media screen and (max-width: 1280px){
@@ -1308,6 +1348,16 @@ iframe {
 	.skills, .contact, .education, .about, .portfolio {
 		padding: 3em 0;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1080px){
 	nav.navbar.navbar-default.navbar-fixed-top {
@@ -1366,11 +1416,31 @@ iframe {
         font-family:"Microsoft YaHei";
 		padding-top: 13%;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1050px){
 	.education-agile-wThl-info p {
 		letter-spacing: 0px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 1024px){
 	.banner, .agileinfo-dot {
@@ -1384,6 +1454,16 @@ iframe {
         font-family:"Microsoft YaHei";
 		padding-top: 11%;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin-left:185px;
+    }
+    .footer-r img{
+        width:100%;
+        height:300px;
+    }
 }
 @media screen and (max-width: 991px){
 	.wTh_banner_info_grid h2 {
@@ -1430,6 +1510,12 @@ iframe {
 	.copyright-agile p {
 		width: 80%;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 900px){
 	nav.navbar.navbar-default.navbar-fixed-top {
@@ -1438,6 +1524,12 @@ iframe {
 	nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 		padding: 1em 4em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 800px){
 	.navbar-default .navbar-nav > li > a {
@@ -1454,6 +1546,12 @@ iframe {
 		padding-top: 6%;
 		font-size: 20px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 	
 }
 @media screen and (max-width: 768px){
@@ -1466,6 +1564,12 @@ iframe {
 	.education-agile-wThl-year {
 		padding: 4.65em 2em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 736px){
 	.navbar-default .navbar-nav > li > a {
@@ -1519,6 +1623,12 @@ iframe {
 	.banner, .agileinfo-dot {
 		min-height: 570px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 667px){
 	i.fa.fa-hourglass-end {
@@ -1548,6 +1658,12 @@ iframe {
 	.banner, .agileinfo-dot {
 		min-height: 550px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 640px){
 	.wTh_banner_info {
@@ -1569,6 +1685,13 @@ iframe {
 	.portfolio h4 {
 		margin: 22px 0;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
+
 }
 @media screen and (max-width: 600px){
 	.education-agile-wThl-year {
@@ -1583,6 +1706,12 @@ iframe {
 	.banner, .agileinfo-dot {
 		min-height: 510px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 568px){
 	.banner, .agileinfo-dot {
@@ -1617,6 +1746,12 @@ iframe {
 		height: 30px;
 		font-size: 35px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 480px){
 	.about-left h3 {
@@ -1658,6 +1793,12 @@ iframe {
 	.copyright-agile p {
 		line-height: 2em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 414px){
 	.about-left h3 {
@@ -1692,8 +1833,7 @@ iframe {
 		width: 97%;
 	}
 	.contactright1 {
-		width: 100%;
-		float: none;
+		float: left;
 	}
 	.contactright1:nth-child(4), .contactright1:nth-child(5) {
 		margin-bottom: 3em;
@@ -1708,6 +1848,23 @@ iframe {
 		background: url(../images/1.jpeg) no-repeat -182px 0px;
 		background-size: cover;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
+    .footer{
+        height:200px;
+    }
+    .footer-r{
+        width:414px;
+        height:200px;
+    }
+    .footer-r img{
+        width:300px;
+       height:200px;
+    }
 }
 @media screen and (max-width: 384px){
 	.wTh_banner_info_grid ul li a {
@@ -1737,6 +1894,12 @@ iframe {
 	.boxwTh-agile .agile-caption p {
 		line-height: 1.6em;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
 @media screen and (max-width: 375px){
 	.education-wThl {
@@ -1748,13 +1911,19 @@ iframe {
 	i.fa.fa-hourglass-end {
 		font-size: 80px;
 	}
+    .my{
+        width:300px;
+        height:400px;
+        margin-top:30px;
+        margin:0 auto;
+    }
 }
-.my{
-    width:300px;
-    height:400px;
-    margin-top:30px;
-    margin-left:185px;
-}
+/*.my{*/
+    /*width:300px;*/
+    /*height:400px;*/
+    /*margin-top:30px;*/
+    /*margin-left:185px;*/
+/*}*/
 @media screen and (max-width: 320px){
 	.wTh_banner_info_grid ul li a {
 		padding: 8px 13px;
